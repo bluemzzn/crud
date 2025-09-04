@@ -10,7 +10,7 @@ return (
             <input type='text' placeholder='Search...' className='border py-1 px-2 text-white rounded-md w-48 md:w-auto' />
         </div>
         <div>
-            <button className='text-white bg-yellow-500 shadow-2xl'>buttons</button>
+            <button className='text-white btn-red shadow-2xl py-2 px-4 rounded-xs'>buttons</button>
 
         </div>
     </div>
