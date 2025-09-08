@@ -7,13 +7,13 @@ import ModalForm from './components/ModalForm'
 function App() {
 
   const [isOpen, setIsOpen] = useState(false);
-  const [modalMode, setmodalMode] = useState('add');
+  const [modalMode, setModalMode] = useState('add');
 
-  const handleModal = (mode) => {
+  const handleOpen = (mode) => {
     setIsOpen(true);
   }
 
-  const handleOpen = () => {
+  const handleSubmit = () => {
     if (modalMode === 'add') {
       console.log('modal mode add');
     }
@@ -22,16 +22,15 @@ function App() {
 
     }
   }
-
   return (
-    <>
+    <div className='bg-[#07071c] h-screen'>
       <Navbar onOpen={() => handleOpen('add')} />
       <TableList />
       <ModalForm isOpen={isOpen}
         onClose={() => setIsOpen(false)}
         onSubmit={handleSubmit}
       />
-    </>
+    </div>
   )
 }
 
