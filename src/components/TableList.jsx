@@ -10,7 +10,7 @@ function TableList({onOpen}) {
 
   return (
     <div className='text-white mt-10 flex justify-center items-center'>
-      <table className='table-auto w-full border-separate'>
+      <table className='table-auto w-full border-collapse'>
         <thead>
           <tr>
             <th></th>
