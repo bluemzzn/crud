@@ -25,7 +25,7 @@ function App() {
   return (
     <div className='bg-[#07071c] h-screen'>
       <Navbar onOpen={() => handleOpen('add')} />
-      <TableList />
+      <TableList handleOpen={handleOpen} />
       <ModalForm isOpen={isOpen}
         onClose={() => setIsOpen(false)}
         onSubmit={handleSubmit}

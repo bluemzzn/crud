@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TableList({onOpen}) {
+function TableList({handleOpen}) {
 
   const clients = [
     { id: 1, name: "John Doe", email: "John.Doe@gmail.com", job: "Developer", rate: "100", isactive: true },
@@ -35,10 +35,10 @@ function TableList({onOpen}) {
                 </button>
               </td>
               <td className='py-0 px-3 w-5'>
-                <button className='inline-block rounded-2xl py-2 px-3 btn-update' onClick={onOpen}>Update</button>
+                <button className='inline-block rounded-2xl py-2 px-3 btn-update' onClick={() => handleOpen("edit")}>Update</button>
               </td>
               <td className='py-0 px-3 w-5'>
-                <button className='inline-block rounded-2xl py-2 px-3 btn-delete' onClick={onOpen}>Delete</button>
+                <button className='inline-block rounded-2xl py-2 px-3 btn-delete' onClick={handleOpen}>Delete</button>
               </td>
             </tr>
           ))}
